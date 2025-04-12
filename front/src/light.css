@@ -1,0 +1,12 @@
+@media (prefers-color-scheme: light) {
+    body {
+        /* 属性 */
+        position: absolute;
+        z-index: -2;
+        top: 0px;
+        left: 0px;
+        /* 样式 */
+
+        background: #d0d0d0;
+    }
+}
