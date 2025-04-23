@@ -6,11 +6,6 @@
     flex: 1;
 }
 
-img {
-    object-fit: contain;
-    vertical-align: middle;
-}
-
 *,
 *::before,
 *::after {
