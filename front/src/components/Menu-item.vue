@@ -3,22 +3,22 @@
 </script>
 
 <template>
-  <div class="button menu-item">
-    <h4 class="text"><slot></slot></h4>
+  <div class="touch menu-item" tabindex="0">
+    <div class="menu-item-content">
+      <slot/>
+    </div>
   </div>
 
 </template>
 
 <style scoped>
-.text{
-
+.menu-item-content {
   display: table-cell;
   vertical-align: middle;
 }
 .menu-item{
   display: table;
   text-align: center;
-  height: 64px;
   width: 64px;
 }
 </style>

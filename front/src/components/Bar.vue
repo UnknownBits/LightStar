@@ -4,12 +4,12 @@
 
 <template>
   <header class="bar">
-    <h1 class="button title">
+    <div class="touch title" tabindex="0">
       <a style="font-size: 24px">
-        <img class="logo" src="@/assets/logo.webp" alt=""/>
+        <img alt="" class="logo hidden-xs" src="@/assets/logo.svg"/>
         LightStar 社区
       </a>
-    </h1>
+    </div>
     <div class="menu">
       <slot name="menu"/>
     </div>
@@ -20,21 +20,18 @@
   background: var(--small-background);
   height: 64px;
   padding: 0 32px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.title{
-  justify-content: flex-start;
-  align-items: flex-start;
-}
+
 .logo{
+  max-width: 64px;
   margin-right: 16px;
 }
+
 .menu{
   display: flex;
-
   flex: auto;
   justify-content: flex-end;
   align-items: center;

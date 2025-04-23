@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "ant-design-vue": "^4.2.6"
-  },
-  "devDependencies": {
-    "unplugin-vue-components": "^28.4.1",
-    "vite-plugin-vue-devtools": "^7.7.2"
-  }
-}
