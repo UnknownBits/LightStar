@@ -1,9 +1,11 @@
-<script lang="ts" setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <main>
-    <TheWelcome/>
+    <input autocomplete="username webauthn" type="text"/>
+    <input autocomplete="new-password" type="password">
   </main>
 </template>
+
+<script lang="ts">
+</script>
