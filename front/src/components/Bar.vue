@@ -1,12 +1,22 @@
 <script setup lang="ts">
+import {useRoute} from "vue-router";
+import {ref, watch} from "vue";
 
+const route = useRoute()
+let isBarShow = ref(true);
+console.log(route)
+watch(() => route.name, async newName => {
+  isBarShow.value = true;
+  if (newName === "login") isBarShow.value = false;
+  if (newName === "register") isBarShow.value = false;
+})
 </script>
 
 <template>
-  <header class="bar">
+  <header v-if="isBarShow" class="bar">
     <div class="title" tabindex="0">
       <div class="icon">
-        <img alt="" src="@/assets/logo.svg"/>
+        <img alt="" src="@/assets/logo.webp"/>
       </div>
       <div class="text">LightStar 社区</div>
     </div>
@@ -15,6 +25,7 @@
     </div>
   </header>
 </template>
+
 <style scoped>
 .bar{
   background: var(--small-background);
@@ -37,6 +48,7 @@
 .text {
   font-size: 24px;
 }
+
 .menu{
   display: flex;
   flex: auto;

@@ -1,13 +1,15 @@
 <script setup lang="ts">
-
+defineProps({
+  link: String,
+})
 </script>
 
 <template>
-  <div class="touch menu-item" tabindex="0">
+  <router-link :to="link" class="touch menu-item" tabindex="0">
     <div class="menu-item-content">
       <slot/>
     </div>
-  </div>
+  </router-link>
 
 </template>
 

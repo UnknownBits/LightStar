@@ -2,18 +2,14 @@
 import {RouterView} from 'vue-router'
 import MenuItem from "@/components/Menu-item.vue";
 import Bar from "@/components/Bar.vue";
-import Logo from "@/components/Logo.vue";
 </script>
 
 <template>
   <Bar>
-    <template #title>
-      <Logo/>
-    </template>
     <template v-slot:menu>
-      <menu-item>主页</menu-item>
-      <menu-item>登录</menu-item>
-      <menu-item>注册</menu-item>
+      <menu-item link="/">主页</menu-item>
+      <menu-item link="/login">登录</menu-item>
+      <menu-item link="/">注册</menu-item>
     </template>
   </Bar>
   <RouterView/>
