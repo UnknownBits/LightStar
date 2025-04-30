@@ -4,14 +4,17 @@
 
 <template>
   <div class="card">
-    text
+    <slot/>
   </div>
 </template>
 
 <style scoped>
 .card {
+  height: 64px;
+  margin: 8px;
+  border-radius: 0.5rem;;
   padding: 16px;
-  border: 1px solid var(--small-border);
-  background: var(--medium-background);
+  background: var(--large-background);
+  box-shadow: 0 0 1px rgba(0, 0, 0, .125), 0 1px 3px rgba(0, 0, 0, .2);
 }
 </style>

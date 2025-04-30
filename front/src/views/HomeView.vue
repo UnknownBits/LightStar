@@ -1,11 +1,69 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import Card from "@/components/Card.vue";
+</script>
 
 <template>
   <main>
-    <input autocomplete="username webauthn" type="text"/>
-    <input autocomplete="new-password" type="password">
+    <Card style="height: 128px;">
+
+    </Card>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
+    <Card/>
   </main>
 </template>
 
-<script lang="ts">
-</script>
+<style scoped>
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+</style>

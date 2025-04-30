@@ -7,21 +7,21 @@ let isBarShow = ref(true);
 console.log(route)
 watch(() => route.name, async newName => {
   isBarShow.value = true;
-  if (newName === "login") isBarShow.value = false;
-  if (newName === "register") isBarShow.value = false;
+  // if (newName === "login") isBarShow.value = false;
+  // if (newName === "register") isBarShow.value = false;
 })
 </script>
 
 <template>
   <header v-if="isBarShow" class="bar">
-    <div class="title" tabindex="0">
+    <div class="title touch" tabindex="0">
       <div class="icon">
         <img alt="" src="@/assets/logo.webp"/>
       </div>
-      <div class="text">LightStar 社区</div>
+      <div class="text">LightStar</div>
     </div>
     <div class="menu">
-      <slot name="menu"/>
+      <slot/>
     </div>
   </header>
 </template>
@@ -30,7 +30,7 @@ watch(() => route.name, async newName => {
 .bar{
   background: var(--small-background);
   height: 64px;
-  padding: 0 32px;
+  padding: 0 48px;
   display: flex;
 }
 
@@ -46,6 +46,7 @@ watch(() => route.name, async newName => {
 }
 
 .text {
+  font-weight: bolder;
   font-size: 24px;
 }
 
