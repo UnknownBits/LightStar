@@ -1,19 +1,20 @@
-import { defineConfig } from 'vite'
+import {fileURLToPath, URL} from 'node:url'
+
+import {defineConfig} from 'vite'
 import vue from '@vitejs/plugin-vue'
-import * as path from "node:path";
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+    plugins: [
+        vue(),
+        vueJsx(),
+        vueDevTools(),
+    ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src')
-    }
-  },
-  plugins: [vue(),vueDevTools()],
-  server: {
-    proxy: {
-      '/api': 'http://localhost:8080',  // 假设Go后端API在8080端口
+        '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
 })

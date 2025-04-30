@@ -1,10 +1,19 @@
 @media (prefers-color-scheme: dark) {
     :root {
+        --small-border: #B6B6B6;
+        --large-border: #C7C7C7;
         --big-background: #292929;
         --special-background: #121212;
+
         --small-background: #313131;
+        --small-background-hover: #3C3C3C;
+        --small-background-active: #414141;
+        --small-background-selection: #454545;
+
         --medium-background: #353535;
         --large-background: #414141;
+
+
     }
 
     h1{ color: #EAEAEA; }
@@ -15,13 +24,17 @@
     h6{ color: #BABABA; }
     p{ color: #BABABA; }
 
-    .button:hover{
+    .touch:hover {
         background: #3C3C3C;
     }
-    .button:active{
+
+    .touch:active {
+
         background: #414141;
     }
-    .button::selection{
+
+    .touch::selection {
+
         background: #454545;
     }
 }
