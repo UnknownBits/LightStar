@@ -1,18 +1,33 @@
 :root {
     color-scheme: light dark;
+    --blue-aqua: 48, 158, 242;
+
+}
+
+
+:root {
+    --theme-accent-color: var(--blue-aqua);
+    --theme-accent-color-100: rgba(var(--theme-accent-color), 1);
+    --theme-accent-color-90: rgba(var(--theme-accent-color), .9);
+    --theme-accent-color-80: rgba(var(--theme-accent-color), .8);
+    --theme-accent-color-70: rgba(var(--theme-accent-color), .7);
+    --theme-accent-color-60: rgba(var(--theme-accent-color), .6);
+    --theme-accent-color-50: rgba(var(--theme-accent-color), .5);
+    --theme-accent-color-40: rgba(var(--theme-accent-color), .4);
+    --theme-accent-color-30: rgba(var(--theme-accent-color), .3);
+    --theme-accent-color-20: rgba(var(--theme-accent-color), .2);
+    --theme-accent-color-10: rgba(var(--theme-accent-color), .1);
+
 }
 
 .none {
     flex: 1;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+* {
     margin: 0;
     padding: 0;
-    font-weight: normal;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 768px) {

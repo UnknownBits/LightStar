@@ -16,6 +16,12 @@
 
     }
 
+    .logo {
+        filter: drop-shadow(2px 2px 6px #409eff);
+    }
+
+// 发光logo
+
     h1{ color: #EAEAEA; }
     h2{ color: #E5E5E5; }
     h3{ color: #DDDDDD; }

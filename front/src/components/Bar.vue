@@ -15,7 +15,7 @@ watch(() => route.name, async newName => {
 <template>
   <header v-if="isBarShow" class="bar">
     <div class="title touch" tabindex="0">
-      <div class="icon">
+      <div class="logo">
         <img alt="" src="@/assets/logo.webp"/>
       </div>
       <div class="text">LightStar</div>
@@ -29,17 +29,20 @@ watch(() => route.name, async newName => {
 <style scoped>
 .bar{
   background: var(--small-background);
+  box-shadow: 0 0 20px #FFFFFF25;
   height: 64px;
-  padding: 0 48px;
+  padding: 0 8px;
   display: flex;
 }
 
 .title {
   display: flex;
+  padding: 0 8px;
+  margin: 4px 8px;
   align-items: center;
 }
 
-.icon {
+.logo {
   display: flex;
   height: 48px;
   padding-right: 16px;

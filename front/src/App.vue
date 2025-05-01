@@ -13,6 +13,7 @@ import IconTooling from "@/components/icons/IconTooling.vue";
 <template>
   <Bar>
       <menu-item link="/">主页</menu-item>
+    <div class="none"/>
       <menu-item link="/login">登录</menu-item>
       <menu-item link="/">注册</menu-item>
   </Bar>
@@ -41,8 +42,9 @@ import IconTooling from "@/components/icons/IconTooling.vue";
 .side-bar{
   display: flex;
   flex-direction: row;
-  background: var(--medium-background);
+  background: rgba(84, 84, 84, 0.6);
   padding: 24px;
   height: 400px;
+  backdrop-filter: blur(20px);
 }
 </style>
