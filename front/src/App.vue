@@ -11,7 +11,7 @@ import IconTooling from "@/components/icons/IconTooling.vue";
 </script>
 
 <template>
-  <Bar>
+  <Bar title="LightStar">
       <menu-item link="/">主页</menu-item>
     <div class="none"/>
       <menu-item link="/login">登录</menu-item>

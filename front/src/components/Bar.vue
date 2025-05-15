@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import {useRoute} from "vue-router";
 import {ref, watch} from "vue";
+import Img from "@/components/Img.vue";
+
+interface Props {
+  title: string
+  bar?: number
+}
+
+const props = defineProps<Props>();
 
 const route = useRoute()
 let isBarShow = ref(true);
@@ -15,10 +23,8 @@ watch(() => route.name, async newName => {
 <template>
   <header v-if="isBarShow" class="bar">
     <div class="title touch" tabindex="0">
-      <div class="logo">
-        <img alt="" src="@/assets/logo.webp"/>
-      </div>
-      <div class="text">LightStar</div>
+      <img class="logo" src="@/assets/logo.webp"/>
+      <div class="text">{{ title }}</div>
     </div>
     <div class="menu">
       <slot/>

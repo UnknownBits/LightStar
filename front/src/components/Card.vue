@@ -4,17 +4,18 @@
 
 <template>
   <div class="card">
-    <slot/>
+    <div class="card-head">
+      <div class="img"></div>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .card {
-  height: 64px;
-  margin: 8px;
-  border-radius: 0.5rem;;
-  padding: 16px;
-  background: var(--large-background);
-  box-shadow: 0 0 1px rgba(0, 0, 0, .125), 0 1px 3px rgba(0, 0, 0, .2);
+
+}
+
+.img {
+  background-image: url("/img.png");
 }
 </style>
