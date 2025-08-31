@@ -4,9 +4,9 @@
 
 body {
     min-height: 100vh;
-    background-image: url("src/assets/background.svg");
     transition: color 0.5s,
     background-color 0.5s;
+    background: url("src/assets/bgc.svg") no-repeat center center;
     line-height: 1.6;
     font-family: Inter,
     -apple-system,
@@ -33,3 +33,34 @@ body {
     font-weight: normal;
 }
 
+#dbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+
+}
+
+.bg {
+    position: absolute;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url("src/assets/bg.svg") no-repeat;
+}
+
+#bg1 {
+    background-position: left -320px top -320px;
+}
+
+#bg2 {
+    background-position: right -320px top -320px;
+}
+
+#bg3 {
+    background-position: left -320px bottom -320px;
+}
+
+#bg4 {
+    background-position: right -320px bottom -320px;
+}

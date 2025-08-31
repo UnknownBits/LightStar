@@ -1,7 +1,12 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import Card from "@/components/Card.vue";
+</script>
 
 <template>
   <main>
+    <Card>
+      AAAAAAAA
+    </Card>
   </main>
 </template>
 

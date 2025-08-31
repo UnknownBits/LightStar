@@ -22,5 +22,6 @@ defineProps({
   display: table;
   text-align: center;
   width: 64px;
+  text-decoration: none;
 }
 </style>

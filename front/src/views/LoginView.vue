@@ -2,11 +2,14 @@
 </script>
 
 <template>
-  <img alt="logo" class="logo" src="@/assets/UB.svg"/>
+  <div class="login">
+
+  </div>
 </template>
 
 <style scoped>
-.logo {
-  height: 64px;
+.login {
+  height: 50vh;
+  width: 50vh;
 }
 </style>

@@ -3,9 +3,11 @@
 </script>
 
 <template>
-
+  <input>
 </template>
 
 <style scoped>
-
+input {
+  height: 32px;
+}
 </style>

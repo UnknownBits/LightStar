@@ -2,6 +2,7 @@
 import {useRoute} from "vue-router";
 import {ref, watch} from "vue";
 import Img from "@/components/Img.vue";
+import SearchBox from "@/components/SearchBox.vue";
 
 interface Props {
   title: string
@@ -26,6 +27,7 @@ watch(() => route.name, async newName => {
       <img class="logo" src="@/assets/logo.webp"/>
       <div class="text">{{ title }}</div>
     </div>
+    <SearchBox></SearchBox>
     <div class="menu">
       <slot/>
     </div>
@@ -34,11 +36,11 @@ watch(() => route.name, async newName => {
 
 <style scoped>
 .bar{
-  background: var(--small-background);
-  box-shadow: 0 0 20px #FFFFFF25;
   height: 64px;
   padding: 0 8px;
   display: flex;
+  align-items: center;
+  backdrop-filter: blur(15px);
 }
 
 .title {
