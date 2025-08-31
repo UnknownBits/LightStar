@@ -16,6 +16,20 @@
 
     }
 
+    .bar {
+        box-shadow: 0 2px 4px #FFFFFF20;
+        background-color: rgba(49, 49, 49, 0.25);
+    }
+
+    .card {
+        box-shadow: 0 2px 4px #FFFFFF20;
+        background-color: rgba(49, 49, 49, 0.25);
+    }
+    .logo {
+        filter: drop-shadow(0px 2px 4px #409eff);
+    }
+// 发光logo
+
     h1{ color: #EAEAEA; }
     h2{ color: #E5E5E5; }
     h3{ color: #DDDDDD; }
