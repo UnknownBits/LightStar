@@ -140,7 +140,7 @@ body {
     position: absolute;
     min-width: 100vw;
     min-height: 100vh;
-    background: url(src/assets/bg.svg) no-repeat
+    background: url(/assets/bg.svg) no-repeat
 }
 
 #bg1 {
